@@ -12,7 +12,7 @@ const Page = () => {
     const ph_no = FormData.get("user_phone");
     try {
       const res = await fetch(
-        "https://formsubmit.co/ajax/thihais123@gmail.com",
+        "https://formsubmit.co/ajax/e2d908937711d1a1200e7a0eae7f3de0",
         {
           method: "POST",
           headers: {
