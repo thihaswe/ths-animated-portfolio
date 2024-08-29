@@ -5,6 +5,7 @@ import { useFormState } from "react-dom";
 
 const Page = () => {
   const text = "say Hello to me!!!";
+  const formRef = useRef<HTMLFormElement>(null); // Create a ref for the form element
 
   const handlesubmit = async (prevState: any, FormData: FormData) => {
     const email = FormData.get("user_email");
@@ -26,25 +27,22 @@ const Page = () => {
           }),
         }
       );
-
       const data = await res.json();
-
       resetForm();
-
       return data;
     } catch (error) {
       return { error: `error is${error}` };
     }
   };
 
-  const formRef = useRef<HTMLFormElement>(null); // Create a ref for the form element
+  const [state, formaction] = useFormState(handlesubmit, undefined);
 
   const resetForm = () => {
     if (formRef.current) {
       formRef.current.reset(); // Reset the form using the ref
     }
   };
-  const [state, formaction] = useFormState(handlesubmit, undefined);
+
   const processText = (text: string) => {
     return text.split("").map((char, index) => {
       if (char === " ") {
@@ -89,6 +87,7 @@ const Page = () => {
   //     .then((data) => console.log(data))
   //     .catch((error) => console.log(error));
   // };
+
   return (
     <motion.div
       className="h-full"

@@ -159,7 +159,7 @@ const Navbar = () => {
       )}
       {/* {icons} */}
       <div className="hidden md:flex gap-4 w-1/3 justify-end ">
-        <Link href="/https://github.com/thihaswe">
+        <Link href="https://github.com/thihaswe">
           <Image src="/github.png" alt="" width={24} height={24} />
         </Link>
         <Link href="/">
@@ -174,7 +174,7 @@ const Navbar = () => {
         <Link href="/">
           <Image src="/pinterest.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="/https://www.linkedin.com/in/thiha-swe-0a168124a/">
+        <Link href="https://www.linkedin.com/in/thiha-swe/">
           <Image src="/linkedin.png" alt="" width={24} height={24} />
         </Link>
       </div>
