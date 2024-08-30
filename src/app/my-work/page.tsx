@@ -100,6 +100,7 @@ const Page = () => {
               className="w-56 h-56 md:w-[500px] md:h-[500px]"
               animate={{ rotate: 360 }}
               transition={{ repeat: Infinity, duration: 7, ease: "linear" }}
+              style={{ pointerEvents: "none" }}
             >
               <defs>
                 <path
@@ -114,10 +115,11 @@ const Page = () => {
               </text>
             </motion.svg>
             <Link
+              className="w-14 h-14 md:w-24 md:h-24 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center cursor-pointer"
               href="/contact"
-              className="w-14 h-14 md:w-24 md:h-24 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
+              style={{ pointerEvents: "auto" }}
             >
-              Hire Me
+              Hire me
             </Link>
           </div>
         </div>

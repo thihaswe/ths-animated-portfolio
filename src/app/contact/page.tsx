@@ -95,7 +95,7 @@ const Page = () => {
       animate={{ y: "0vh" }}
       transition={{ duration: 0.5 }}
     >
-      <div className="h-full w-full px-4 sm:px-8 md:px-12 lg:px-20 xl:px-36 flex lg:flex-row flex-col gap-24 lg:gap-0 pb-10 pt-10 lg:pt-0 lg-pb-0">
+      <div className="h-full w-full px-4 sm:px-8 md:px-12 lg:px-20 xl:px-36 flex lg:flex-row flex-col gap-24 lg:gap-0 pb-10 pt-10 lg:pt-0 lg-pb-0 overflow-auto">
         {/* {animated word} */}
         <div className="lg:w-1/2 flex justify-center items-center text-3xl">
           {/* {Array.from(text).map((txt, index) => {
