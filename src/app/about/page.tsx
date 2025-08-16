@@ -19,9 +19,9 @@ const Page = () => {
       animate={{ y: "0vh" }}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex h-full overflow-auto " ref={containerRef}>
+      <div className="flex h-full overflow-auto" ref={containerRef}>
         {/* {text container} */}
-        <div className="sm:px-8 md:px-12 lg:px-20 xl:px-36 flex flex-col gap-10 w-2/3 xl:w-1/2 ">
+        <div className="px-3 md:px-12 lg:px-20 xl:px-36 flex flex-col gap-10 md:w-2/3 xl:w-1/2  ">
           {/* {biography} */}
           <div className="mt-10">
             <h1 className="text-4xl mb-5">BIOGRAPHY</h1>
@@ -116,24 +116,24 @@ const Page = () => {
                 {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                   Nest.js
                   </div> */}
-                {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                   Framer Motion
-                </div> */}
+                </div>
                 {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                   SCSS
                 </div> */}
-                {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                   MongoDB
-                </div> */}
+                </div>
                 {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                   Spring Boot
                 </div> */}
                 {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                   GraphQL
                 </div> */}
-                {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                   Prisma
-                </div> */}
+                </div>
                 {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                   Three.js
                 </div> */}
@@ -143,6 +143,13 @@ const Page = () => {
                 <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                   Webpack
                 </div>
+
+                <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                  AWS
+                </div>
+                <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                  Firebase
+                </div> */}
                 <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                   Vite
                 </div>
@@ -150,14 +157,8 @@ const Page = () => {
                   Docker
                 </div>
                 <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                  AWS
-                </div>
-                <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                  Firebase
-                </div> */}
-                {/* <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                   Figma
-                </div> */}
+                </div>
                 <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                   Git
                 </div>
@@ -199,12 +200,13 @@ const Page = () => {
             </motion.h1>
 
             {/* {job - 1 } */}
-            <div className="flex justify-between h-48">
+
+            <div className="flex justify-between h-48 ">
               {/* {left } */}
               <div className="w-1/3">
                 {/* {jobTitle} */}
                 <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  Sales Promoter
+                  Web Developer
                 </div>
                 {/* {jobDesc} */}
                 {/* <div className="p-3 text-sm italic">
@@ -212,11 +214,11 @@ const Page = () => {
                 </div> */}
                 {/* {jobDate} */}
                 <div className="p-3 text-red-400 text-sm font-semibold">
-                  2019
+                  2024 - present
                 </div>
                 {/* { jobCompany  } */}
                 <div className="rounded p-1 w-fit bg-white text-sm font-semibold">
-                  Samsung
+                  PassionGeek
                 </div>
               </div>
               {/* {middle} */}
@@ -234,7 +236,7 @@ const Page = () => {
               <div className="w-1/3">
                 {/* {jobTitle} */}
                 <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  Junior Service Technician
+                  Freelance
                 </div>
                 {/* {jobDesc} */}
                 {/* <div className="p-3 text-sm italic">
@@ -242,11 +244,11 @@ const Page = () => {
                 </div> */}
                 {/* {jobDate} */}
                 <div className="p-3 text-red-400 text-sm font-semibold">
-                  2023
+                  2023 - present
                 </div>
                 {/* { jobCompany  } */}
                 <div className="rounded p-1 w-fit bg-white text-sm font-semibold">
-                  Computer Service Shwe Latt Taw
+                  self-based
                 </div>
               </div>
               {/* {middle} */}
@@ -264,7 +266,7 @@ const Page = () => {
               <div className="w-1/3">
                 {/* {jobTitle} */}
                 <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  Delivery
+                  Computer Service Technician
                 </div>
                 {/* {jobDesc} */}
                 {/* <div className="p-3 text-sm italic">
@@ -272,11 +274,11 @@ const Page = () => {
                 </div> */}
                 {/* {jobDate} */}
                 <div className="p-3 text-red-400 text-sm font-semibold">
-                  2021 - 2023
+                  2022 - 2023
                 </div>
                 {/* { jobCompany  } */}
                 <div className="rounded p-1 w-fit bg-white text-sm font-semibold">
-                  YGN Delivery Service
+                  Computer service shwe latt taw
                 </div>
               </div>
               {/* {middle} */}
